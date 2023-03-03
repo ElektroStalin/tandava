@@ -1,0 +1,166 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+.container{ 
+    max-width: 1160px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: rgba(34, 34, 34, 1);
+}
+
+.slogan{
+    position: absolute;
+    left: 38.33%;
+    right: 51.82%;
+    top: 1.07%;
+    bottom: 98.29%;
+
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    /* or 112% */
+
+
+    color: #2194FF;
+
+    border: 1px solid #000000;
+}
+
+.phone{
+    position: absolute;
+    width: 214px;
+    height: 29px;
+    left: 1284px;
+    top: 24px;
+    
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    color: #F1F1F1;
+}
+.help{
+    position: absolute;
+    width: 140px;
+    height: 22px;
+    left: 1284px;
+    top: 58px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #2194FF;
+}
+
+.one{
+    max-width: 1160px;
+    padding: 0 10px;
+    margin: 0 auto;
+    background-color: rgba(34, 34, 34, 1);
+}
+
+.logo{
+    position: absolute;
+    width: 269px;
+    height: 98px;
+    left: 422px;
+    top: 18px;
+}
+
+
+.First{
+    position: absolute;
+    width: 1037px;
+    height: 477px;
+    left: 883px;
+    top: 112px;
+}
+
+.anytime{
+    position: absolute;
+    width: 201px;
+    height: 54px;
+    left: 427px;
+    top: 149px;
+}
+
+.weather{
+    position: absolute;
+    width: 293px;
+    height: 52.95px;
+    left: 662px;
+    top: 150.05px;
+}
+
+h1{
+    position: absolute;
+    width: 617px;
+    height: 126px;
+    left: 427px;
+    top: 215px;
+    
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 63px;
+    /* or 98% */
+    color: #2194FF;
+}
+
+.mo{
+    position: absolute;
+    width: 617px;
+    height: 58px;
+    left: 422px;
+    top: 355px;
+    
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #F1F1F1;
+}
+
+.arrow{
+    position: absolute;
+    width: 71px;
+    height: 90px;
+    left: 724px;
+    top: 389.83px;
+    transform: rotate(-29.37deg);
+}
+
+.order{
+    position: absolute;
+    width: 395px;
+    height: 87px;
+    left: 422px;
+    top: 453px;
+    background-image: url(images/btn.png);
+    border: linear-gradient(rgba(33, 148, 255, 1),
+rgba(129, 192, 251, 1),
+rgba(16, 140, 255, 1));
+}    
