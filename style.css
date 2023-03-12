@@ -1,166 +1,946 @@
-html{
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
 
 *,
 *::before,
-*::after{
-    box-sizing: inherit;
+*::after {
+  box-sizing: inherit;
 }
 
-.container{ 
-    max-width: 1160px;
-    padding: 0 10px;
-    margin: 0 auto;
+.body {
+  background-color: #222222;
 }
 
-nav{
-    background-color: rgba(34, 34, 34, 1);
+/* header styling */
+.container {
+  max-width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
 }
 
-.slogan{
-    position: absolute;
-    left: 38.33%;
-    right: 51.82%;
-    top: 1.07%;
-    bottom: 98.29%;
-
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    /* or 112% */
-
-
-    color: #2194FF;
-
-    border: 1px solid #000000;
+.logo {
+  margin: 18px 24px 0 24px;
 }
 
-.phone{
-    position: absolute;
-    width: 214px;
-    height: 29px;
-    left: 1284px;
-    top: 24px;
-    
-    font-family: 'Russo One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
-    color: #F1F1F1;
-}
-.help{
-    position: absolute;
-    width: 140px;
-    height: 22px;
-    left: 1284px;
-    top: 58px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    /* identical to box height */
-
-    text-decoration-line: underline;
-
-    color: #2194FF;
+.container hr {
+  content: "";
+  border: 1px solid #ffffff;
+  width: 0px;
+  height: 33px;
+  margin-left: 0;
+  margin-right: 21px;
+  margin-top: 61px;
 }
 
-.one{
-    max-width: 1160px;
-    padding: 0 10px;
-    margin: 0 auto;
-    background-color: rgba(34, 34, 34, 1);
+.slogan {
+  color: #2194ff;
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  -webkit-text-stroke: 0px black;
+  margin-top: 60px;
+  padding: 0;
+  max-width: 189px;
+  max-height: 36px;
+  text-indent: each-line;
+  text-align: left;
 }
 
-.logo{
-    position: absolute;
-    width: 269px;
-    height: 98px;
-    left: 422px;
-    top: 18px;
+.right-side {
+  margin-top: 24px;
+  margin-left: 359px;
 }
 
-
-.First{
-    position: absolute;
-    width: 1037px;
-    height: 477px;
-    left: 883px;
-    top: 112px;
+.phone {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration: none;
+  color: #f1f1f1;
+}
+.help {
+  display: block;
+  margin-top: 5px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2194ff;
+}
+.main {
+  background-color: #222222;
+  margin-bottom: 72px;
 }
 
-.anytime{
-    position: absolute;
-    width: 201px;
-    height: 54px;
-    left: 427px;
-    top: 149px;
+/* first section styling */
+
+.intro {
+  display: flex;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.sec-first {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.weather{
-    position: absolute;
-    width: 293px;
-    height: 52.95px;
-    left: 662px;
-    top: 150.05px;
+.icons {
+  display: flex;
+  margin-top: 33px;
+  margin-bottom: 12px;
+}
+.anytime {
+  margin-left: 37px;
+  margin-right: 34px;
+}
+.pic-main {
+  display: block;
+}
+h1 {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 63px;
+  color: #2194ff;
+  max-width: 617px;
+  max-height: 126px;
+  margin: 0 0 14px 37px;
 }
 
-h1{
-    position: absolute;
-    width: 617px;
-    height: 126px;
-    left: 427px;
-    top: 215px;
-    
-    font-family: 'Russo One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 63px;
-    /* or 98% */
-    color: #2194FF;
+.point {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #f1f1f1;
+  margin: 14px 0 40px 32px;
 }
 
-.mo{
-    position: absolute;
-    width: 617px;
-    height: 58px;
-    left: 422px;
-    top: 355px;
-    
-    font-family: 'Russo One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    
-    color: #F1F1F1;
+.arrow-inline {
+  display: inline;
 }
 
-.arrow{
-    position: absolute;
-    width: 71px;
-    height: 90px;
-    left: 724px;
-    top: 389.83px;
-    transform: rotate(-29.37deg);
+.arrow {
+  margin: -85px 40px 0 334px;
+  rotate: 8deg;
 }
 
-.order{
-    position: absolute;
-    width: 395px;
-    height: 87px;
-    left: 422px;
-    top: 453px;
-    background-image: url(images/btn.png);
-    border: linear-gradient(rgba(33, 148, 255, 1),
-rgba(129, 192, 251, 1),
-rgba(16, 140, 255, 1));
-}    
+.order {
+  margin: -20px 0 0 32px;
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  color: #f1f1f1;
+  width: 395px;
+  height: 87px;
+  border-radius: 12px;
+  background-image: url(images/btn.svg);
+}
+
+.price-slogan {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #f1f1f1;
+  text-align: center;
+  margin-top: 13px;
+  margin-left: 51px;
+  max-width: 350px;
+}
+
+/* second section styling */
+
+.proportion-container {
+  background-color: rgba(33, 148, 255, 0.05);
+}
+.proportion {
+  max-width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.real-price {
+  width: 1160px;
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  margin-top: 46px;
+  color: #2194ff;
+  text-align: center;
+  padding-top: 33px;
+}
+.sec-second {
+  max-width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+}
+.propane,
+.butane {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #f1f1f1;
+  margin-bottom: 0px;
+}
+
+.gas-price {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #2194ff;
+  margin-top: 0px;
+}
+.specs {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #f1f1f1;
+}
+
+.about-butane,
+.about-propane {
+  display: flex;
+  flex-direction: column;
+}
+
+.props-middle {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(241, 241, 241, 0.7);
+  text-align: center;
+}
+
+.percentage {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  margin: 4px 0 0 0;
+  color: rgba(241, 241, 241, 0.7);
+}
+
+.of-gas {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 12px;
+  color: rgba(241, 241, 241, 0.7);
+  margin-top: 1px;
+}
+
+.perfect-proportion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prop-img {
+  align-self: center;
+}
+
+.but-prop {
+  display: inline-flex;
+}
+
+.propane-props {
+  margin-right: 25px;
+}
+
+.butane-props {
+  margin-left: 25px;
+}
+
+hr {
+  height: 51px;
+  width: 0;
+  border: 1px solid rgba(241, 241, 241, 0.3);
+}
+
+.buy-gas {
+  background: #2194ff;
+  border-radius: 50px;
+  width: 155px;
+  height: 43px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+/* third section styling */
+
+.advantages {
+  max-width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+.adv-list {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.adv-item {
+  width: 380px;
+}
+.adv-slogan {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #f1f1f1;
+  margin-bottom: 57px;
+}
+
+.adv-title {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #2194ff;
+  margin-bottom: 14px;
+}
+
+.adv-description {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+.adv-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+  justify-self: baseline;
+}
+
+.guarant {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  color: #f1f1f1;
+  width: 533px;
+  height: 168px;
+  margin-bottom: 20px;
+}
+
+.four-hour {
+  text-align: end;
+  color: #2194ff;
+}
+
+.valuable {
+  width: 533px;
+  height: 35px;
+  background-color: #2194ff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 19px;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 7px 13px 9px 12px;
+}
+
+.we-have-trucks {
+  max-width: 1111px;
+  margin-top: 22px;
+  display: flex;
+}
+
+/* fourth section styling */
+
+.volume-container {
+  background-color: rgba(33, 148, 255, 0.05);
+}
+
+.volume-section {
+  max-width: 1160px;
+  height: 587px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.volume {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #2194ff;
+  padding-top: 34px;
+  margin-bottom: 35px;
+  margin-top: 0;
+}
+
+.volume-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.volume-item {
+  width: 164px;
+  height: 64px;
+  padding: 10px 0;
+  margin: 0 24px 37px 0;
+  background: rgba(241, 241, 241, 0.2);
+  border-radius: 20px;
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #f1f1f1;
+  opacity: 0.7;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.volume-item-blue {
+  width: 164px;
+  height: 64px;
+  padding: 10px 0;
+  margin: 0 24px 37px 0;
+  background: #2194ff;
+  border-radius: 20px;
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #f1f1f1;
+  opacity: 0.7;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.volume-order {
+  width: 295px;
+  height: 87px;
+  box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.45);
+  border-radius: 11px;
+  background-image: url(images/btn.svg);
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #f1f1f1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -37px;
+  margin-bottom: 64px;
+}
+.volume-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* fifth section styling*/
+
+.reviews-section {
+  max-width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.reviews-heading {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+.customer-review {
+  width: 759px;
+  height: 320px;
+  background: #f1f1f1;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  display: flex;
+}
+.customer-review img {
+  float: left;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 201px;
+  height: 240px;
+  border-radius: 20px;
+  margin: 40px 23px 40px 40px;
+}
+
+.customer-name {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #2194ff;
+  margin-top: 50px;
+  margin-bottom: 4px;
+}
+
+.customer-location {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2d2d2d;
+  margin-top: 4px;
+}
+
+blockquote {
+  width: 445px;
+  height: 153px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2d2d2d;
+  margin-left: 0;
+}
+
+.reviews-block {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.reviewer-quote {
+  flex-direction: column;
+}
+
+.review-rects {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.rect {
+  width: 61px;
+  height: 18px;
+  background: rgba(241, 241, 241, 0.2);
+  border-radius: 20px;
+  margin-top: 24px;
+  margin-right: 8px;
+}
+.rect-selected {
+  width: 61px;
+  height: 18px;
+  background: #2194ff;
+  border-radius: 20px;
+  margin-top: 24px;
+  margin-right: 8px;
+}
+
+/* sixth section styling */
+
+.faq-container {
+  background-color: rgba(33, 148, 255, 0.05);
+  padding-bottom: 40px;
+}
+
+.faq-section {
+  max-width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.faq-heading {
+  padding-top: 37px;
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #2194ff;
+}
+
+.faq-items {
+  display: inline-block;
+}
+.faq-item {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: none;
+  width: 1140px;
+  height: 70px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #f1f1f1;
+}
+.faq-item img {
+  float: left;
+  margin: 27px 22px 27px 32px;
+}
+
+.faq-item p {
+  margin: 24px 0;
+}
+
+.faq-item-answered img {
+  float: left;
+  padding: 27px 22px 27px 32px;
+}
+
+.faq-item-answered {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: none;
+  width: 1140px;
+  height: 108px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #f1f1f1;
+}
+
+.faq-item-answered p {
+  margin: 24px 0;
+}
+
+.faq-answer {
+  margin-top: 16px;
+  margin-left: 68px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #f1f1f1;
+  text-transform: none;
+}
+
+.faq-item-last {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 1140px;
+  height: 70px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #f1f1f1;
+}
+
+.faq-item-last img {
+  float: left;
+  padding: 27px 22px 27px 32px;
+}
+
+/* seventh section styling */
+
+.form-section {
+  max-width: 1160px;
+  padding: 55px 10px 0 10px;
+  margin: 0 auto;
+}
+
+.form-section-heading {
+  margin-left: 32px;
+  margin-bottom: 50px;
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #f1f1f1;
+}
+
+.form-blocks {
+  display: flex;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+}
+
+#name,
+#phone {
+  width: 402px;
+  height: 51px;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+#phone {
+  margin: 24px 0;
+}
+
+#any {
+  width: 402px;
+  height: 112px;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+#ask-manager {
+  width: 220px;
+  height: 47px;
+  margin-top: 24px;
+  margin-bottom: 59px;
+  background: #2194ff;
+  border-radius: 50px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #f1f1f1;
+}
+::placeholder {
+  margin-left: 22px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: rgba(45, 45, 45, 0.5);
+}
+
+.manager-block {
+  margin-right: 136px;
+}
+
+.partners-block {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.partner {
+  width: 162px;
+  height: 66px;
+  background: #f1f1f1;
+  border-radius: 20px;
+  display: inline-flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+/* eighth section styling */
+
+.order-section {
+  max-width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.order-heading {
+  margin-top: 34px;
+  margin-bottom: 11px;
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #2194ff;
+}
+
+.order-btn {
+  width: 295px;
+  height: 87px;
+  border-radius: 11px;
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #f1f1f1;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+  background-image: url(images/btn.svg);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* footer styling */
+
+.footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 1140px;
+  height: 488px;
+  background: #f1f1f1;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 33px;
+  display: flex;
+}
+
+.footer-heading {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #2194ff;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.footer-text-block {
+  margin-left: 40px;
+}
+
+.any-questions {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1b2639;
+}
+
+.footer-line {
+  width: 490px;
+  margin-left: 0;
+  height: 0px;
+  border: 1px solid rgba(27, 38, 57, 0.2);
+}
+
+.office-word,
+.phone-word {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #2194ff;
+  margin-bottom: 3px;
+}
+
+.address {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1b2639;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+.phone-number {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1b2639;
+  text-decoration: none;
+}
+
+.map-block {
+  margin-left: auto;
+}
+
+.footer-links {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding-bottom: 68px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer-link {
+  margin-left: 32px;
+  margin-right: 32px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #f1f1f1;
+}
